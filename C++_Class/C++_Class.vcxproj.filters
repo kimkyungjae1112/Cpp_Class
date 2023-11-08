@@ -13,5 +13,13 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\DailyPractice">
+      <UniqueIdentifier>{78f5d133-f86e-40f1-aae9-a162b6383473}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cpp15_practice_class2.cpp">
+      <Filter>소스 파일\DailyPractice</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
