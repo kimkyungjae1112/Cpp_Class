@@ -21,5 +21,35 @@
     <ClCompile Include="cpp15_practice_class2.cpp">
       <Filter>소스 파일\DailyPractice</Filter>
     </ClCompile>
+    <ClCompile Include="cpp02_practice.cpp">
+      <Filter>소스 파일\DailyPractice</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp03_practice_variables.cpp">
+      <Filter>소스 파일\DailyPractice</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp04_practice_operators.cpp">
+      <Filter>소스 파일\DailyPractice</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp05_practicec_if.cpp">
+      <Filter>소스 파일\DailyPractice</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp06_practice_loop.cpp">
+      <Filter>소스 파일\DailyPractice</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp07_practice_function.cpp">
+      <Filter>소스 파일\DailyPractice</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp08_practice_function2.cpp">
+      <Filter>소스 파일\DailyPractice</Filter>
+    </ClCompile>
+    <ClCompile Include="cc09_practice_array.cpp">
+      <Filter>소스 파일\DailyPractice</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp12_practice_dynamicpointer.cpp">
+      <Filter>소스 파일\DailyPractice</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp14_practice_class.cpp">
+      <Filter>소스 파일\DailyPractice</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

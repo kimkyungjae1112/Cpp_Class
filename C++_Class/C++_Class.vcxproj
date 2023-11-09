@@ -19,7 +19,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="cpp02_practice.cpp" />
+    <ClCompile Include="cpp03_practice_variables.cpp" />
+    <ClCompile Include="cpp04_practice_operators.cpp" />
+    <ClCompile Include="cpp05_practicec_if.cpp" />
+    <ClCompile Include="cpp06_practice_loop.cpp" />
+    <ClCompile Include="cpp07_practice_function.cpp" />
+    <ClCompile Include="cpp08_practice_function2.cpp" />
+    <ClCompile Include="cpp12_practice_dynamicpointer.cpp" />
+    <ClCompile Include="cpp14_practice_class.cpp" />
     <ClCompile Include="cpp15_practice_class2.cpp" />
+    <ClCompile Include="cc09_practice_array.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
