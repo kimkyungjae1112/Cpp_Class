@@ -303,8 +303,84 @@ namespace smart_ptr_my
 	}
 } 
 
-
-int main()
+namespace Deep_copy
 {
-	smart_ptr_my::main();
+	template<typename T>
+	class smartptr
+	{
+	private:
+		T* ptr;
+
+	public:
+		smartptr(T* p = 0) : ptr(p) {}
+		smartptr(const smartptr& p)
+		{
+			ptr = new T;
+			memcpy(ptr, p.ptr, sizeof(T));
+		}
+
+		T& operator*() { return *ptr; }
+		T* operator->() { return ptr; }
+
+		~smartptr() { delete ptr; }
+	};
+
+
+	int main()
+	{
+		smartptr<int> p1 = new int;
+		*p1 = 10;
+
+		smartptr<int> p2 = p1;
+		cout << *p2 << endl;
+		return 0;
+	}
+}
+
+namespace reference_counter
+{
+	template <typename T>
+	class smartptr
+	{
+	private:
+		T* ptr;
+		int* ref;
+
+	public:
+		smartptr(T* p = 0) : ptr(p)
+		{
+			ref = new int(1);
+		}
+		smartptr(const smartptr& p) : ptr(p.ptr), ref(p.ref)
+		{
+			(*ref)++;
+		}
+
+		~smartptr()
+		{
+			if (--(*ref) == 0)
+			{
+				delete ptr;
+				delete ref;
+			}
+		}
+
+		T& operator*()
+		{
+			return *ptr;
+		}
+		T* operator->()
+		{
+			return ptr;
+		}
+	};
+
+	int main()
+	{
+		smartptr<int>  p1 = new int;
+		*p1 = 10;
+
+		smartptr<int> p2 = p1;
+		return 0;
+	}
 }
