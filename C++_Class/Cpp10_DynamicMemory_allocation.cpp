@@ -10,7 +10,7 @@ namespace new_and_delete
 		delete p;
 
 		int a = 1024;
-		delete& a;
+		delete& a; //¿À·ù
 
 		int arr_size;
 		cin >> arr_size;
