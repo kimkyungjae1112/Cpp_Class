@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> 
 using namespace std;
 
 namespace Before_AdaptorPattern
@@ -159,13 +159,50 @@ namespace After_AdaptorPatern
 		s.push_front(10);
 		s.push_front(20);
 		s.push_front(30);
-		slist<int>::iterator iter;
-		cout << *(xfind(s.begin(), s.end(), 40));
+		slist<int>::iterator iter = xfind(s.begin(), s.end(), 40);
+		
+		return 0;
+	}
+}
+namespace Function_Object
+{
+	struct plus
+	{
+		int operator()(int a, int b)
+		{
+			return a + b;
+		}
+	};
+
+	class PiggyBox
+	{
+		int total;
+
+	public:
+		PiggyBox(int init = 0) : total(init) {}
+		int operator()(int money)
+		{
+			total += money;
+			return total;
+		}
+	};
+
+	int main()
+	{
+		plus p;
+		PiggyBox pig;
+
+		cout << "money(100) : " << pig(100) << endl;
+		cout << "money(500) : " << pig(500) << endl;
+		cout << "money(2000) : " <<pig(2000) << endl;
+
+		int n = p(1, 2);
+		cout << n << endl;
 		return 0;
 	}
 }
 
-int main()
-{
-	After_AdaptorPatern::main();
-}
+//int main()
+//{
+//	Function_Object::main();
+//}
