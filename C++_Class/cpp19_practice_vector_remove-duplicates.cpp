@@ -167,39 +167,39 @@ public:
 	}
 };
 
-int main()
-{
-	VECTOR<char> vec;
-	vec.push_back('a');
-	vec.push_back('b');
-	vec.push_back('b');
-	vec.push_back('a');
-	vec.push_back('e');
-	vec.push_back('d');
-	vec.push_back('d');
-	vec.push_back('b');
-
-	std::cout << "처음 들어있는 값" << std::endl;
-	for (auto& i : vec)
-	{
-		std::cout << i << " ";
-	}
-	std::cout << '\n' << '\n';
-
-
-	std::cout << "정렬 후 들어있는 값" << std::endl;
-	vec._sort();
-	for (int i = 0; i < vec.size(); ++i)
-	{
-		std::cout << vec[i] << " ";
-	}
-	std::cout << '\n' << '\n';
-
-	std::cout << "중복 제거 후 들어있는 값" << std::endl;
-	vec.erase(unique(vec.begin(), vec.end()), vec.end());
-	for (int i = 0; i < vec.size(); ++i)
-	{
-		std::cout << vec[i] << " ";
-	}
-	return 0;
-}
+//int main()
+//{
+//	VECTOR<char> vec;
+//	vec.push_back('a');
+//	vec.push_back('b');
+//	vec.push_back('b');
+//	vec.push_back('a');
+//	vec.push_back('e');
+//	vec.push_back('d');
+//	vec.push_back('d');
+//	vec.push_back('b');
+//
+//	std::cout << "처음 들어있는 값" << std::endl;
+//	for (auto& i : vec)
+//	{
+//		std::cout << i << " ";
+//	}
+//	std::cout << '\n' << '\n';
+//
+//
+//	std::cout << "정렬 후 들어있는 값" << std::endl;
+//	vec._sort();
+//	for (int i = 0; i < vec.size(); ++i)
+//	{
+//		std::cout << vec[i] << " ";
+//	}
+//	std::cout << '\n' << '\n';
+//
+//	std::cout << "중복 제거 후 들어있는 값" << std::endl;
+//	vec.erase(unique(vec.begin(), vec.end()), vec.end());
+//	for (int i = 0; i < vec.size(); ++i)
+//	{
+//		std::cout << vec[i] << " ";
+//	}
+//	return 0;
+//}

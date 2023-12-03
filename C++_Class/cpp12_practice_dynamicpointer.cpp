@@ -439,3 +439,8 @@ namespace same_Heap
 		return 0;
 	}
 }
+
+int main()
+{
+	dynamic_Heap::main();
+}

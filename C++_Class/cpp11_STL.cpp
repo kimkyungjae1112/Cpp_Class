@@ -201,8 +201,3 @@ namespace Function_Object
 		return 0;
 	}
 }
-
-//int main()
-//{
-//	Function_Object::main();
-//}
